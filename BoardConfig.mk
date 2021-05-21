@@ -22,7 +22,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollo
 TARGET_RECOVERY_DEVICE_MODULES := libinit_apollo
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/apollo_defconfig
+KERNEL_DEFCONFIG := apollo_defconfig
 
 # Inherit from the proprietary version
 include vendor/xiaomi/apollo/BoardConfigVendor.mk
