@@ -73,13 +73,11 @@ void set_ro_build_prop(const std::string &source, const std::string &prop,
 void set_device_props(const std::string fingerprint, const std::string description,
         const std::string brand, const std::string device, const std::string model) {
     for (const auto &source : ro_props_default_source_order) {
-        set_ro_build_prop(source, "fingerprint", fingerprint);
         set_ro_build_prop(source, "brand", brand, true);
         set_ro_build_prop(source, "device", device, true);
         set_ro_build_prop(source, "model", model, true);
     }
 
-    property_override("ro.build.fingerprint", fingerprint.c_str());
     property_override("ro.build.description", description.c_str());
 }
 
