@@ -7,6 +7,7 @@
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAApolloFrameworks \
+    AOSPAApolloSettings \
     AOSPAApolloSystemUI \
     ApolloFrameworks \
     ApolloSystemUI
