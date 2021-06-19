@@ -34,4 +34,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)
+$(call inherit-product, vendor/xiaomi/apollon/apollon-vendor.mk)
