@@ -21,5 +21,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_apollo
 # Kernel
 KERNEL_DEFCONFIG := apollo_defconfig
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := apollon,apollo,apollopro
+
 # Inherit from the proprietary version
 include vendor/xiaomi/apollon/BoardConfigVendor.mk
